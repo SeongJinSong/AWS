@@ -1,2 +1,11 @@
 # Project exclude paths
 /.gradle/
+### Example user template template
+### Example user template
+
+# IntelliJ project files
+.gradle
+.idea
+*.iml
+out
+gen
