@@ -1,6 +1,6 @@
 package com.aws.websvc.dto;
-import com.aws.websvc.web.dto.HelloResponseDto;
 import org.junit.Test;
+import com.aws.websvc.web.dto.HelloResponseDto;
 import static org.assertj.core.api.Assertions.assertThat;
 
 public class HelloResponseDtoTest {
