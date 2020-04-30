@@ -1,6 +1,6 @@
 package com.aws.websvc.web;
 
-import com.aws.websvc.service.posts.PostsService;
+import com.aws.websvc.service.PostsService;
 import com.aws.websvc.web.dto.PostsSaveRequestDto;
 import com.aws.websvc.web.dto.PostsUpdateRequestDto;
 import com.aws.websvc.web.dto.PostsResponseDto;
@@ -25,5 +25,11 @@ public class PostsApiController {
     @GetMapping("/api/v1/posts/{id}")
     public PostsResponseDto findById(@PathVariable Long id){
         return postsService.findById(id);
+    }
+
+    @DeleteMapping("/api/v1/posts/{id}")
+    public Long delete(@PathVariable Long id){
+        postsService.delete(id);
+        return id;
     }
 }
